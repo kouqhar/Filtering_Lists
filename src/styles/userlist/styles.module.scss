@@ -5,7 +5,7 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-content: center;
     align-items: center;
-    padding: 1rem .5rem;
+    padding-block: 1rem;
     position: sticky;
     top: 0;
     left: 0;
@@ -22,6 +22,11 @@
             margin-block-end: .5rem;
             display: block;
             font-weight: bolder;
+
+            sub {
+                font-size: .65rem;
+                color: rgb(255, 129, 129);
+            }
         }
 
         .double_input input,
@@ -40,5 +45,43 @@
 
 .user_content {
     height: auto;
+    width: 80%;
+    max-width: 1200px;
     margin-block-start: 2rem;
+    margin-inline: auto;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: .5rem 2rem;
+
+        li {
+            list-style-type: none;
+            line-height: .75rem;
+            background-color: rgb(7, 65, 52);
+            border-radius: .5rem;
+            padding: .75rem;
+            margin-block-end: 2rem;
+            cursor: pointer;
+
+            p {
+                font-size: 1.1rem;
+                font-weight: bold;
+
+                b {
+                    font-size: 1.15rem;
+                    color: rgb(255, 169, 129);
+                }
+            }
+
+
+            &:nth-child(odd) {
+                background-color: rgb(27, 122, 102);
+            }
+        }
+    }
 }

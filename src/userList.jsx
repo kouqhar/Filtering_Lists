@@ -9,19 +9,19 @@ const UserList = ({ filteredUsers }) => {
         className={["", styles.user_content__list].join(" ")}
       >
         <p>
-          <b>FirstName: </b> {first}
+          <b>FirstName : -->  </b> {first}
         </p>
         <p>
-          <b>LastName: </b> {last}
+          <b>LastName : -->  </b> {last}
         </p>
         <p>
-          <b>Age: </b> {age}
+          <b>Gender : -->  </b> {gender}
         </p>
         <p>
-          <b>Gender: </b> {gender}
+          <b>Nationality : -->  </b> {nat}
         </p>
         <p>
-          <b>Nationality: </b> {nat}
+          <b>Age : -->  </b> {age}
         </p>
       </li>
     )

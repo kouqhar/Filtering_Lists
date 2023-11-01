@@ -1,8 +1,7 @@
-# React + Vite
+# Filtering Lists
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fetch users' data from https://randomuser.me/documentation
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+    - Your users list should have features to filter by age range, nationality, and gender.
+    - Include search functionality so users can be searched by name.

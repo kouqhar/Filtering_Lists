@@ -17,8 +17,9 @@ function User() {
   });
 
   // Fetch data from RandomUser API and limit result to 50 users
+  // I didn't memoize this cause the "results" seems to be changing every time
   useEffect(() => {
-    axios.get("https://randomuser.me/api/?resultsx=50").then((response) => {
+    axios.get("https://randomuser.me/api/?results=50").then((response) => {
       setUsers(response?.data?.results);
       setFilteredUsers(response?.data?.results);
     });
@@ -95,7 +96,9 @@ function User() {
           </select>
         </div>
         <div className={[styles.form_group].join(" ")}>
-          <label>Filter by Age:</label>
+          <label>
+            Filter by Age: <sub>(Both fields are required!)</sub>
+          </label>
           <div className={["", styles.double_input]}>
             <input
               type="number"
