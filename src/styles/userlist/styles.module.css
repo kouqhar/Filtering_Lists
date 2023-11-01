@@ -1,0 +1,41 @@
+.Form_wrapper {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  gap: 2rem;
+  background-color: teal;
+}
+.Form_wrapper .form_group {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-inline: auto;
+}
+.Form_wrapper .form_group label {
+  margin-block-end: 0.5rem;
+  display: block;
+  font-weight: bolder;
+}
+.Form_wrapper .form_group .double_input input,
+.Form_wrapper .form_group input,
+.Form_wrapper .form_group select {
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-block-end: 0.2rem;
+  width: 100%;
+}
+
+.user_content {
+  height: auto;
+  margin-block-start: 2rem;
+}/*# sourceMappingURL=styles.module.css.map */
